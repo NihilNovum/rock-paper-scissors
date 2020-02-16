@@ -63,7 +63,7 @@ function game() {
     let playerScore = 0;
     let computerScore = 0;
     let numberOfRounds = prompt("How many rounds would you like the game to last?");
-    while ( numberOfRounds == "" || numberOfRounds == 0) {
+    while ( numberOfRounds == "" || numberOfRounds <= 0) {
         numberOfRounds = prompt("Please enter correct number of rounds");
     }
     while (playerScore < numberOfRounds && computerScore < numberOfRounds) {
